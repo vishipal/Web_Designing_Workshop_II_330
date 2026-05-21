@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     display: flex;
@@ -7,37 +7,43 @@ body{
     height: 100vh;
 }
 
-.container{
+.container {
+    width: 500px;
     background: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0px 0px 10px gray;
     text-align: center;
-    width: 350px;
 }
 
-input{
-    width: 90%;
-    padding: 10px;
-    margin-top: 10px;
+h1 {
     margin-bottom: 20px;
 }
 
-button{
-    background: blue;
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    background-color: green;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover{
-    background: darkblue;
+button:hover {
+    background-color: darkgreen;
 }
 
-#result{
+#output {
     margin-top: 20px;
-    font-size: 22px;
+    text-align: left;
     font-weight: bold;
 }
