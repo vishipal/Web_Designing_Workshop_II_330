@@ -1,0 +1,50 @@
+function calculateResult(){
+
+    let subjects =
+        parseInt(document.getElementById("subjects").value);
+
+    let total = 0;
+
+    for(let i = 1; i <= subjects; i++){
+
+        let marks =
+            parseInt(prompt("Enter marks for Subject " + i));
+
+        total = total + marks;
+    }
+
+    let average = total / subjects;
+
+    let grade = "";
+
+    if(average >= 90){
+        grade = "A+";
+    }
+    else if(average >= 75){
+        grade = "A";
+    }
+    else if(average >= 60){
+        grade = "B";
+    }
+    else if(average >= 40){
+        grade = "C";
+    }
+    else{
+        grade = "Fail";
+    }
+
+    let resultText = "";
+
+    if(average >= 40){
+        resultText = "PASS";
+    }
+    else{
+        resultText = "FAIL";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Total Marks: " + total + "<br>" +
+        "Average Marks: " + average.toFixed(2) + "<br>" +
+        "Grade: " + grade + "<br>" +
+        "Result: " + resultText;
+}
